@@ -1,16 +1,17 @@
-#ifndef STAFFMEMBER_H
-#define STAFFMEMBER_H
+#ifndef EMPLMNG
+#def EMPLMNG
 
-
-class StaffMember
+class staffMember
 {
-    public:
-        StaffMember();
-        virtual ~StaffMember();
+  protected:
+    int employeeID;
+    std::string phone;
+    std::string name;
+    std::string email;
 
-    protected:
-
-    private:
+  public:
+    std::string Print();
+    double Pay();
 };
 
-#endif // STAFFMEMBER_H
+#endif
