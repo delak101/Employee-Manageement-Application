@@ -1,16 +1,20 @@
 #ifndef EMPLMNG
 #def EMPLMNG
 
+#include<iostream>
+
+using namespace std;
+
 class staffMember
 {
   protected:
     int employeeID;
-    std::string phone;
-    std::string name;
-    std::string email;
+    string phone;
+    string name;
+    string email;
 
   public:
-    std::string Print();
+    string Print();
     double Pay();
 };
 
