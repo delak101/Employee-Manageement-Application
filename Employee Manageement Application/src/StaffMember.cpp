@@ -1,14 +1,14 @@
-#include "StaffMember.h"
+#include "staffMember.h"
 #include <iostream>
 
 using namespace std;
 
-StaffMember::StaffMember(){
+staffMember::staffMember(){
 }
-StaffMember::StaffMember(int employeeID, string phone, string name, string email){
+staffMember::staffMember(int employeeID, string phone, string name, string email){
 
 }
-StaffMember::~StaffMember()
+staffMember::~staffMember()
 {
     //dtor
 }
