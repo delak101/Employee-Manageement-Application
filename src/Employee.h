@@ -3,7 +3,7 @@
 
 
 #include "staffMember.h"
-#include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -17,8 +17,23 @@ namespace Constants{
 };
 
 //Input Handlers
-string takeStringInput(string Vari, string valu);
-int takeIntInput(string Vari, int valu);
+string takeStringInput(string Vari, string valu)
+{
+    cout << "Enter " << Vari << ": ";
+    cin >> valu;
+
+    return valu;
+
+}
+
+int takeIntInput(string Vari, int valu)
+{
+    cout << "Enter " << Vari << ": ";
+    cin >> valu;
+
+    return valu;
+
+};
 
 
 class Employee : public StaffMember::staffMember
@@ -45,7 +60,7 @@ class Employee : public StaffMember::staffMember
         Employee(){
 
             staffMember();
-            socialSecurityNumber = 'NULL';
+            socialSecurityNumber = "NULL";
         }
         
 };
@@ -76,8 +91,8 @@ class HourlyEmployee : public Employee
         //Default instructor
         HourlyEmployee(){
             Employee();
-            HoursWorked = NULL;
-            rate        = NULL;
+            HoursWorked = 0;
+            rate        = 0;
         }
 };
 

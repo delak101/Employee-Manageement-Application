@@ -26,10 +26,10 @@ namespace StaffMember
 
         //Default values when no info is given
         staffMember(){
-            employeeID = NULL   ; 
-            phone      = 'NULL' ;
-            name       = 'NULL' ;
-            email      = 'Email';
+            employeeID = 0      ; //Maybe later Make it default to the latest ID
+            phone      = "NULL" ;
+            name       = "NULL" ;
+            email      = "NULL" ;
         }
 
         //these were deemed unneseccary now
