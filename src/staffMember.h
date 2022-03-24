@@ -16,13 +16,32 @@ namespace StaffMember
 
     public:
 
-        void setEmployeeID(int employeeID);
-        void setPhone(string phone);
-        void setName(string name);
-        void setEmail(string email);
+        //Constructor Used usually
+        staffMember(string Name, string Phone, string Email, int ID){
+            employeeID = ID   ;
+            phone      = Phone;
+            name       = Name ;
+            email      = Email;
+        }
+
+        //Default values when no info is given
+        staffMember(){
+            employeeID = 0      ; //Maybe later Make it default to the latest ID
+            phone      = "NULL" ;
+            name       = "NULL" ;
+            email      = "NULL" ;
+        }
+
+        //these were deemed unneseccary now
+        //we can't do this over and over for every fucking child class
+            /* void setEmployeeID(int employeeID);
+                void setPhone(string phone);
+                void setName(string name);
+                void setEmail(string email);
+            */
         string Print();
         double Pay();
-
+        
     };
 }
 #endif
