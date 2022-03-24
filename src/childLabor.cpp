@@ -17,10 +17,8 @@ void HourlyEmployee::NewHourlyEmployee()
   
 }
 
-void HourlyEmployee::addHours(int extraHours)
-{
-    HoursWorked += extraHours;
-}
+//Watch me 1 line this
+void HourlyEmployee::addHours(int extraHours) { HoursWorked += extraHours; }
 
 string HourlyEmployee::Print()
 {
