@@ -4,6 +4,7 @@
 using namespace std;
 
 //Emplyee child class
+//It failed to compile due to a minor error i'm really lazy to fix, i'll do it later
 
 void HourlyEmployee::NewHourlyEmployee()
 {
@@ -41,6 +42,6 @@ string HourlyEmployee::Print()
 double HourlyEmployee::Pay()
 {
 
-
+//pay here i dunno
 }
 
