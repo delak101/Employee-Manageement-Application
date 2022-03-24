@@ -44,4 +44,26 @@ namespace StaffMember
         
     };
 }
+
+class Volunteer : StaffMember::staffMember
+{
+
+    protected:
+        double amount;
+
+    public:
+        //Constructor
+        Volunteer(string Name, string Phone, string Email, int ID)
+        {
+            staffMember(Name, Phone, Email, ID);
+
+        }
+
+        //Default values
+        Volunteer()
+        {
+            staffMember();
+        }
+
+};
 #endif

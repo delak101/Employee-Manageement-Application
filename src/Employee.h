@@ -9,11 +9,11 @@ using namespace std;
 
 //Strings used frequently by input handlers so i declared them here
 namespace Constants{
-    const string SSN   = "Social Security Number";
-    const string email = "Email"                 ;
-    const string phone = "Phone"                 ;
-    const string ID    = "ID"                    ;
-    const string name  = "Name"                  ;    
+    const string cSSN   = "Social Security Number";
+    const string cEmail = "Email"                 ;
+    const string cPhone = "Phone number"          ;
+    const string cID    = "ID"                    ;
+    const string cName  = "Name"                  ;    
 };
 
 //Input Handlers
@@ -67,7 +67,6 @@ class Employee : public StaffMember::staffMember
 
 class HourlyEmployee : public Employee
 {
-
     public:
         void addHours(int);
         double Pay();
@@ -120,7 +119,6 @@ class SalariedEmployee : public Employee
 
         SalariedEmployee()
         {
-
             Employee();
             salary = 0; //So sad no salary, C O P E
         }
@@ -137,6 +135,7 @@ class CommissionEmployee : public Employee
         string Print();
         double target;
 
+        //Constructor for this class
         CommissionEmployee(string ssn, string Name, string Phone, string Email,
          int ID, double Target )
          {
@@ -144,5 +143,9 @@ class CommissionEmployee : public Employee
              Employee(ssn, Name, Phone, Email, ID);
              target = Target;
          }
+
+        //Default Constructor
+        CommissionEmployee() { Employee(); target = 0;}
+
 };
 #endif
